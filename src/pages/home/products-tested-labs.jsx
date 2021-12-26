@@ -2,9 +2,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function ProductsTestedInLabs() {
   return (
     <div className=" p-8">
-      <h1 className=" text-gray-700 ">Products Tested in Our Labs</h1>
-      <div className=" pt-6 px-52">
-        <div className="grid grid-cols-3  ">
+      <h1 className=" text-gray-700 text-center md:text-left">
+        Products Tested in Our Labs
+      </h1>
+      <div className=" pt-6 md:px-52">
+        <div className="grid grid-cols-1 md:grid-cols-3">
           <div className="flex flex-col justify-center items-center px-6">
             <div className=" bg-blue-200  shadow-md h-24 w-24  flex justify-center items-center  rounded-full">
               <FontAwesomeIcon
@@ -33,8 +35,8 @@ function ProductsTestedInLabs() {
           </div>
         </div>
       </div>
-      <div className="py-6 px-52">
-        <div className="grid grid-cols-3 gap-x-0">
+      <div className="py-6 md:px-52">
+        <div className="grid md:grid-cols-3 gap-x-0">
           <div className="flex flex-col justify-center items-center px-6">
             <div className=" bg-blue-200  shadow-md h-24 w-24  flex justify-center items-center  rounded-full">
               <FontAwesomeIcon

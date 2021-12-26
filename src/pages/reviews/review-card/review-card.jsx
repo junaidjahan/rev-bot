@@ -1,26 +1,36 @@
-import mobileImages from "../../../images/pixel-6.jpg";
-
-function ReviewCard() {
+function ReviewCard({ imageURl, name, price, description, buttonClick }) {
+  const buttonClicked = (e) => {
+    buttonClick();
+  };
   return (
     <div>
-      <div className="bg-white  grid grid-cols-3 rounded-xl shadow-md mt-9">
-        <div className="rounded-xl -mt-9 p-4 ">
-          <img src={mobileImages} alt="" className="rounded-xl shadow-sm " />
-        </div>
-        <div className="col-span-2 p-3">
-          <h1 className="text-gray-700 ">Google Pixel 6</h1>
+      {imageURl && (
+        <div className="bg-white  grid md:grid-cols-3 rounded-xl shadow-md mt-9">
+          <div className="rounded-xl -mt-9 p-4 md:w-64 md:h-60 h-72">
+            <img
+              src={imageURl}
+              alt=""
+              className="rounded-xl shadow-md h-full w-full"
+            />
+          </div>
+          <div className="md:col-span-2 p-3">
+            <h1 className="text-gray-700 ">{name}</h1>
 
-          <h2 className="text-xl font-bold text-blue-600 ">$599</h2>
-          <p className="my-1">
-            The all-new Pixel Camera has bigger sensors to help you capture more
-            color, more detail, and 150% more light than Pixel 5. And with the
-            ultrawide lens on the back, get even more of your world in the shot.
-          </p>
-          <button className="rounded-lg py-1.5 px-2 bg-blue-500  hover:bg-blue-600">
-            View Details
-          </button>
+            <h2 className="text-xl font-bold text-blue-600 ">{price}</h2>
+            <p className="my-1">{description}</p>
+            <div className="text-center md:text-left">
+              <button
+                onClick={(e) => {
+                  buttonClicked(e);
+                }}
+                className="rounded-lg md:py-1.5 md:px-2 px-20 bg-blue-500  hover:bg-blue-600"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
