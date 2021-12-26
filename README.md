@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Create React App Updated
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Sign up](https://user-images.githubusercontent.com/70884217/146949148-cef2c11f-315d-43f1-9648-e16038553403.png)
+![home](https://user-images.githubusercontent.com/70884217/146949191-bd57441e-62bd-427c-8ecd-422489d39f0b.png)
+![Reviews](https://user-images.githubusercontent.com/70884217/146949224-6d171f25-9d10-4fd3-a315-62a52421697d.png)
+![review page](https://user-images.githubusercontent.com/70884217/146949254-c537b0d0-c4ab-45f4-93b4-be93ca43aa5e.png)

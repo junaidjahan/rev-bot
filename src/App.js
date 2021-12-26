@@ -19,6 +19,8 @@ import { useRecoilValue } from "recoil";
 import "./App.css";
 import TabBar from "./components/tab-bar/tab-bar";
 import "./index.css";
+import About from "./pages/About/About";
+import Contactus from "./pages/contactus/Contactus";
 import Home from "./pages/home/home";
 import LoginSignip from "./pages/login-signup/login-signup";
 import Login from "./pages/login/login";
@@ -59,6 +61,10 @@ function App() {
             <Route path="home" element={<Home />} />
             <Route path="reviews" element={<Reviews />}></Route>
             <Route path="reviews/:id" element={<ProductReview />} />
+            <Route path="about" element={<About />}></Route>
+            <Route path="contactus" element={<Contactus />}></Route>
+            <Route path="about" element={<About />}></Route>
+            <Route path="contactus" element={<Contactus />}></Route>
           </Routes>
         </div>
 
