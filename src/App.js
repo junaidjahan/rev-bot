@@ -22,6 +22,8 @@ import Login from "./pages/login/login";
 import ProductReview from "./pages/reviews/product-review/product-review";
 import Reviews from "./pages/reviews/reviews";
 import SignUp from "./pages/signup/signup";
+import About from "./pages/About/About";
+import Contactus from "./pages/contactus/Contactus";
 function App() {
   library.add(
     fab,
@@ -48,6 +50,8 @@ function App() {
         <Route path="home" element={<Home />} />
         <Route path="reviews" element={<Reviews />}></Route>
         <Route path="reviews/:id" element={<ProductReview />} />
+        <Route path="about" element={<About />}></Route>
+        <Route path="contactus" element={<Contactus />}></Route>
       </Routes>
     </div>
   );
