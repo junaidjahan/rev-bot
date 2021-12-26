@@ -26,27 +26,9 @@ function ProductReview() {
       setLoader(false);
     }
   }
-  // getAllListing();
   useEffect(() => {
-    // Update the document title using the browser API
     getById(id);
   }, []);
-  const goodPoints = [
-    "Premium, unique design",
-    "Great display",
-    "Long battery life",
-    "Versatile, upgraded cameras",
-    "Customizable UI and exclusive features",
-    "Competitive price tag",
-  ];
-  const badPoints = [
-    "Pokey fingerprint sensor",
-    "No telephoto camera",
-    "Not powerful enough long-term",
-    "Slow charging",
-    "Bad Camera Designs",
-    "Single sim jack",
-  ];
 
   return (
     <div className="mt-5 bg-gray-100">
@@ -84,13 +66,13 @@ function ProductReview() {
               </div>
             </div>
           </div>
-          <div className="mx-2">
+          <div className="mx-2 mt-5 md:mt-0">
             <div className="bg-red-600 h-2  "></div>
             <div className="bg-red-500 bg-opacity-30">
               <h1 className="text-center text-xl pt-2 ">Bad Points</h1>
               <div className="px-10 py-4">
                 <ul>
-                  {badPoints.map((icon) => {
+                  {row.BadPoints.map((icon) => {
                     return (
                       <li key={icon} className="py-1">
                         <FontAwesomeIcon
@@ -108,7 +90,7 @@ function ProductReview() {
           </div>
         </div>
         <div className="md:px-32 pt-8">
-          <h1>Specifications</h1>
+          <h1 className="text-center md:text-left text-4xl">Specifications</h1>
           <Table tableData={row.Specifications} />
         </div>
       </div>

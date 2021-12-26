@@ -6,29 +6,23 @@ function About() {
   return (
     <div className="">
       <div className="">
-        <div className="bg-indigo-500 mt-8 grid md:grid-cols-2 rounded-lg ">
-          <div className="flex flex-col justify-center items-center py-28">
+        <div className="bg-indigo-500 mt-8 grid md:grid-cols-2">
+          <div className="flex flex-col justify-center items-center md:py-28 py-10">
             <h1 className=" text-white text-left">
               <div className="text-4xl">Helping</div>
-              <div className="text-9xl">Millions</div>
+              <div className="md:text-9xl text-7xl">Millions</div>
               <div className="text-4xl">Grow Better.</div>
             </h1>
           </div>
           <div>
-            <img
-              src={bot}
-              alt="no logo"
-              width="500px"
-              className="rounded-2xl"
-              srcset=""
-            />
+            <img src={bot} alt="no logo" width="" className="" srcset="" />
           </div>
         </div>
       </div>
-      <div className="">
+      <div className="container">
         <div className="">
           <div>
-            <div className="bg-white  grid grid-cols-3 rounded-full shadow-md mt-9">
+            <div className="  grid md:grid-cols-3 md:rounded-full rounded-md mt-9 bg-blue-100">
               <div className="rounded-full -mt-1 p-4 ">
                 <img
                   src={mobileImages}
@@ -36,11 +30,11 @@ function About() {
                   className="rounded-full shadow-sm "
                 />
               </div>
-              <div className="col-span-2 p-3">
+              <div className="md:col-span-2 p-3  md:flex flex-col justify-center">
                 <h1 className="text-gray-700 ">Junaid Jahan</h1>
 
                 <h2 className="text-xl font-bold text-blue-600 ">
-                  CEO Lauren Industry
+                  CEO Lauren Industries
                 </h2>
                 <p className="my-1">
                   They say that the first impression is the last. What better
@@ -51,7 +45,7 @@ function About() {
                 </p>
               </div>
             </div>
-            <div className="bg-white  grid grid-cols-3 rounded-full shadow-md mt-9">
+            <div className=" grid md:grid-cols-3 md:rounded-full rounded-md mt-9 bg-blue-100">
               <div className="rounded-xl -mt-1 p-4">
                 <img
                   src={mobileImages}
@@ -59,11 +53,11 @@ function About() {
                   className="rounded-full shadow-sm "
                 />
               </div>
-              <div className="col-span-2 p-3">
+              <div className="md:col-span-2 p-3  md:flex flex-col justify-center">
                 <h1 className="text-gray-700 ">Ali Abbas</h1>
 
                 <h2 className="text-xl font-bold text-blue-600 ">
-                  Sorry I'm not interesting.
+                  MD Lauren industries
                 </h2>
                 <p className="my-1">
                   They say that the first impression is the last. What better
@@ -77,7 +71,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="mt-6">
         <div className="flex place-content-center">
           <div>
             <h1 className="get-in">Get In Touch</h1>
@@ -90,7 +84,7 @@ function About() {
           >
             LinkedIn
           </button>
-          <button className="button" href="https://twitter.com/alii_abbax">
+          <button className="button mx-3" href="https://twitter.com/alii_abbax">
             Twitter
           </button>
           <button className="button" href="https://www.intagram.com/">

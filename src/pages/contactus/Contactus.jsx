@@ -6,7 +6,7 @@ function contactus() {
   const currentYear = new Date().getFullYear();
   return (
     <div className="bg-orange-200 Main Div mt-5">
-      <div className="flex w-full  bg-indigo-500 upper div">
+      <div className="md:flex w-full  bg-indigo-500 upper div">
         <div className="flex-1 left-div bg-indigo-500">
           <img src={mobileImages} alt="" className="" />
         </div>

@@ -1,6 +1,7 @@
 import bot from "../../bot.jpg";
 import review from "../../review-img.jpg";
 import ProductsTestedInLabs from "./products-tested-labs";
+
 function Home() {
   return (
     <div>
@@ -19,7 +20,7 @@ function Home() {
                   the best. Read our reviews guarantee to find out why.
                 </p>
               </div>
-              <button className="mt-5 w-64 mr-20">Check here!</button>
+              <button className="mt-5 w-64 md:mr-20">Check here!</button>
             </div>
             <div>
               <img
@@ -36,7 +37,7 @@ function Home() {
           <ProductsTestedInLabs />
         </div>
         <div className="py-4">
-          <div className="bg-gray-100 mx-0 py-5 px-40 grid grid-cols-2">
+          <div className="bg-gray-100 mx-0 py-5 md:px-40 grid px-5 md:grid-cols-2">
             <div>
               <h1>What's Safest? The Best Deal?</h1>
               <h1>Most reliable</h1>
@@ -50,7 +51,7 @@ function Home() {
                 reporting, plus tools to help keep you informed, safe and
                 connected.
               </p>
-              <div>
+              <div className="text-center md:text-left">
                 <button className="bg-transparent hover:bg-purple-100 border-4 border-blue-600 text-blue-600 mt-4">
                   Join Comunity
                 </button>

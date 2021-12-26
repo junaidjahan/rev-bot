@@ -43,8 +43,10 @@ const Reviews = () => {
         <div className="py-28">
           <div className="flex flex-col justify-end items-end">
             <h1 className=" text-white text-left">
-              <div className="text-5xl">Get the whole</div>
-              <div className="text-8xl">Tech Story</div>
+              <div className="text-5xl text-center md:text-left">
+                Get the whole
+              </div>
+              <div className="text-8xl text-center">Tech Story</div>
               {/* <div className="text-7xl">Story</div> */}
             </h1>
             <div>
@@ -67,7 +69,7 @@ const Reviews = () => {
           srcset=""
         />
       </div>
-      <div className="container px-48 py-14">
+      <div className="container md:px-48 py-14">
         <h1 className=" text-gray-800 text-left">
           <div className="text-4xl">Latest Devices</div>
         </h1>
