@@ -54,6 +54,8 @@ const TabBar = () => {
                     )}
                   </li>
                 </Link>
+                <Link to="/about">
+
                 <li
                   onClick={() => setActiveStatus(3)}
                   className={
@@ -69,6 +71,9 @@ const TabBar = () => {
                     <div className="w-full h-1 bg-blue-600 rounded-t-md" />
                   )}
                 </li>
+                </Link>
+
+                <Link to="/contactus">
                 <li
                   onClick={() => setActiveStatus(4)}
                   className={
@@ -84,6 +89,9 @@ const TabBar = () => {
                     <div className="w-full h-1 bg-blue-600 rounded-t-md" />
                   )}
                 </li>
+                </Link>
+                
+                
               </ul>
             </div>
           </div>
