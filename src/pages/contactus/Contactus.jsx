@@ -1,5 +1,4 @@
 import React from "react";
-// import "/Users/sahib/Downloads/Compressed/rev-bot/rev-bot/src/index.css";
 import BaseTextField from "../../components/base-components/base-text-field";
 import mobileImages from "../../images/girl.png";
 

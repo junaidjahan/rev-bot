@@ -1,5 +1,4 @@
 import React from "react";
-// import "/Users/sahib/Downloads/Compressed/rev-bot/rev-bot/src/index.css";
 import mobileImages from "../../images/men.png";
 import bot from "../../unnamed.png";
 function About() {
