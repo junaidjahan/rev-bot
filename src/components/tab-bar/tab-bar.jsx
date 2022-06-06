@@ -55,43 +55,40 @@ const TabBar = () => {
                   </li>
                 </Link>
                 <Link to="/about">
-
-                <li
-                  onClick={() => setActiveStatus(3)}
-                  className={
-                    activeStatus == 3
-                      ? "text-sm border-blue-600 pt-3 rounded-t text-blue-600 mr-6"
-                      : "text-sm text-gray-600 py-3 flex items-center mr-6 hover:text-blue-600 cursor-pointer"
-                  }
-                >
-                  <div className="flex items-center mb-3 px-1">
-                    <span className=" font-bold">About</span>
-                  </div>
-                  {activeStatus == 3 && (
-                    <div className="w-full h-1 bg-blue-600 rounded-t-md" />
-                  )}
-                </li>
+                  <li
+                    onClick={() => setActiveStatus(3)}
+                    className={
+                      activeStatus == 3
+                        ? "text-sm border-blue-600 pt-3 rounded-t text-blue-600 mr-6"
+                        : "text-sm text-gray-600 py-3 flex items-center mr-6 hover:text-blue-600 cursor-pointer"
+                    }
+                  >
+                    <div className="flex items-center mb-3 px-1">
+                      <span className=" font-bold">About</span>
+                    </div>
+                    {activeStatus == 3 && (
+                      <div className="w-full h-1 bg-blue-600 rounded-t-md" />
+                    )}
+                  </li>
                 </Link>
 
                 <Link to="/contactus">
-                <li
-                  onClick={() => setActiveStatus(4)}
-                  className={
-                    activeStatus == 4
-                      ? "text-sm border-blue-600 pt-3 rounded-t text-blue-600 mr-6"
-                      : "text-sm text-gray-600 py-3 flex items-center mr-6 hover:text-blue-600 cursor-pointer"
-                  }
-                >
-                  <div className="flex items-center mb-3 px-1">
-                    <span className=" font-bold">Contact us</span>
-                  </div>
-                  {activeStatus == 4 && (
-                    <div className="w-full h-1 bg-blue-600 rounded-t-md" />
-                  )}
-                </li>
+                  <li
+                    onClick={() => setActiveStatus(4)}
+                    className={
+                      activeStatus == 4
+                        ? "text-sm border-blue-600 pt-3 rounded-t text-blue-600 mr-6"
+                        : "text-sm text-gray-600 py-3 flex items-center mr-6 hover:text-blue-600 cursor-pointer"
+                    }
+                  >
+                    <div className="flex items-center mb-3 px-1">
+                      <span className=" font-bold">Contact us</span>
+                    </div>
+                    {activeStatus == 4 && (
+                      <div className="w-full h-1 bg-blue-600 rounded-t-md" />
+                    )}
+                  </li>
                 </Link>
-                
-                
               </ul>
             </div>
           </div>
