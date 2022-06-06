@@ -54,8 +54,8 @@ function App() {
       <div>
         <div className="">
           <Routes>
-            <Route path="/" element={<LoginSignip />}>
-              <Route path="login" element={<Login />} />
+            <Route path="/login" element={<LoginSignip />}>
+              <Route path="/" element={<Login />} />
               <Route path="signup" element={<SignUp />} />
             </Route>
             <Route path="/home" element={<Home />} />
