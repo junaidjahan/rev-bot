@@ -1,6 +1,7 @@
 {
   "name": "rev-bot",
   "version": "0.1.0",
+  "homepage": "https://junaidjahan.github.io/rev-bot",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.2",
@@ -14,6 +15,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.24.0",
+    "gh-pages": "^4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.21.0",
@@ -26,6 +28,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "craco build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",

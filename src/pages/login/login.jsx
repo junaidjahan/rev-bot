@@ -2,15 +2,13 @@ import axios from "axios";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import { useRecoilState } from "recoil";
 import BaseTextField from "../../components/base-components/base-text-field";
-import { myAlert } from "../../helpers/helpers";
+import { myAlert, setLoader } from "../../helpers/helpers";
 import { login } from "../../sdk/models/login.model";
-import { loaderState } from "../../state";
 function Login() {
   let navigate = useNavigate();
   const [state, setState] = useState(login);
-  const [_, setLoader] = useRecoilState(loaderState);
+
   const handleChange = (e, name) => {
     setState((prevState) => ({
       ...prevState,
@@ -43,8 +41,8 @@ function Login() {
           <BaseTextField
             label="Email"
             type="email"
-            onchange={(e) => {
-              handleChange(e, "Email");
+            onChange={(e) => {
+              handleChange(e.value, "Email");
             }}
           />
         </div>
@@ -52,7 +50,7 @@ function Login() {
           <BaseTextField
             label="Password"
             type="password"
-            onchange={(e) => {
+            onChange={(e) => {
               handleChange(e, "Password");
             }}
           />
