@@ -22,6 +22,7 @@ import "./index.css";
 import About from "./pages/About/About";
 import Contactus from "./pages/contactus/Contactus";
 import Home from "./pages/home/home";
+import LoginSignip from "./pages/login-signup/login-signup";
 import Login from "./pages/login/login";
 import ProductReview from "./pages/reviews/product-review/product-review";
 import Reviews from "./pages/reviews/reviews";
