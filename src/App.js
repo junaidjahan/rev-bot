@@ -54,19 +54,17 @@ function App() {
       <div>
         <div className="">
           <Routes>
-            <Route path="/*">
-              <Route index path="/home" element={<Home />} />
-              <Route path="/" element={<LoginSignip />}>
-                <Route path="login" element={<Login />} />
-                <Route path="signup" element={<SignUp />} />
-              </Route>
-              <Route path="/reviews" element={<Reviews />}></Route>
-              <Route path="/reviews/:id" element={<ProductReview />} />
-              <Route path="/about" element={<About />}></Route>
-              <Route path="/contactus" element={<Contactus />}></Route>
-              <Route path="/about" element={<About />}></Route>
-              <Route path="/contactus" element={<Contactus />}></Route>
+            <Route index path="/" element={<Home />} />
+            <Route path="/login" element={<LoginSignip />}>
+              <Route path="login" element={<Login />} />
+              <Route path="signup" element={<SignUp />} />
             </Route>
+            <Route path="/reviews" element={<Reviews />}></Route>
+            <Route path="/reviews/:id" element={<ProductReview />} />
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/contactus" element={<Contactus />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/contactus" element={<Contactus />}></Route>
           </Routes>
         </div>
 
