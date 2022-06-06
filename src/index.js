@@ -8,7 +8,7 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <RecoilRoot>
-    <BrowserRouter basename="rev-bot/">
+    <BrowserRouter basename="rev-bot">
       <App />
     </BrowserRouter>
   </RecoilRoot>,
