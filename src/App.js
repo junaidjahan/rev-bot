@@ -22,7 +22,6 @@ import "./index.css";
 import About from "./pages/About/About";
 import Contactus from "./pages/contactus/Contactus";
 import Home from "./pages/home/home";
-import LoginSignip from "./pages/login-signup/login-signup";
 import Login from "./pages/login/login";
 import ProductReview from "./pages/reviews/product-review/product-review";
 import Reviews from "./pages/reviews/reviews";
@@ -54,17 +53,17 @@ function App() {
       <div>
         <div className="">
           <Routes>
-            <Route path="/login" element={<LoginSignip />}>
-              <Route path="/" element={<Login />} />
-              <Route path="signup" element={<SignUp />} />
-            </Route>
-            <Route path="/home" element={<Home />} />
-            <Route path="/reviews" element={<Reviews />}></Route>
-            <Route path="/reviews/:id" element={<ProductReview />} />
-            <Route path="/about" element={<About />}></Route>
-            <Route path="/contactus" element={<Contactus />}></Route>
-            <Route path="/about" element={<About />}></Route>
-            <Route path="/contactus" element={<Contactus />}></Route>
+            {/* <Route path="/" element={<LoginSignip />}> */}
+            <Route path="/rev-bot/login" element={<Login />} />
+            <Route path="signup" element={<SignUp />} />
+            {/* </Route> */}
+            <Route path="/rev-bot/home" element={<Home />} />
+            <Route path="/rev-bot/reviews" element={<Reviews />}></Route>
+            <Route path="/rev-bot/reviews/:id" element={<ProductReview />} />
+            <Route path="/rev-bot/about" element={<About />}></Route>
+            <Route path="/rev-bot/contactus" element={<Contactus />}></Route>
+            <Route path="/rev-bot/about" element={<About />}></Route>
+            <Route path="/rev-bot/contactus" element={<Contactus />}></Route>
           </Routes>
         </div>
 
