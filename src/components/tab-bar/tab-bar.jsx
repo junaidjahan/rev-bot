@@ -4,13 +4,7 @@ import tabBarLogo from "../../review-bot-logo.png";
 const TabBar = () => {
   const [activeStatus, setActiveStatus] = useState(1);
   const location = useLocation();
-  if (
-    !(
-      location.pathname === "/" ||
-      location.pathname === "/login" ||
-      location.pathname === "/signup"
-    )
-  ) {
+  if (!(location.pathname === "/login" || location.pathname === "/signup")) {
     return (
       <div className=" bg-white shadow-md">
         <div className="flex justify-between container ">
