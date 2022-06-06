@@ -54,11 +54,11 @@ function App() {
       <div>
         <div className="">
           <Routes>
+            <Route index path="/home" element={<Home />} />
             <Route path="/" element={<LoginSignip />}>
               <Route path="login" element={<Login />} />
               <Route path="signup" element={<SignUp />} />
             </Route>
-            <Route index path="/home" element={<Home />} />
             <Route path="/reviews" element={<Reviews />}></Route>
             <Route path="/reviews/:id" element={<ProductReview />} />
             <Route path="/about" element={<About />}></Route>
