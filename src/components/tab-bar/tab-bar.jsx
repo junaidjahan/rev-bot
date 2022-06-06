@@ -14,7 +14,7 @@ const TabBar = () => {
           <div>
             <div className="xl:w-full xl:mx-0 h-12 hidden sm:block ">
               <ul className="flex px-5">
-                <Link to="/home">
+                <Link to="/">
                   <li
                     onClick={() => setActiveStatus(1)}
                     className={
