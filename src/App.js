@@ -55,10 +55,10 @@ function App() {
         <div className="">
           <Routes>
             <Route path="/" element={<LoginSignip />}>
-              <Route index path="login" element={<Login />} />
+              <Route path="login" element={<Login />} />
               <Route path="signup" element={<SignUp />} />
             </Route>
-            <Route path="/home" element={<Home />} />
+            <Route index path="/home" element={<Home />} />
             <Route path="/reviews" element={<Reviews />}></Route>
             <Route path="/reviews/:id" element={<ProductReview />} />
             <Route path="/about" element={<About />}></Route>
