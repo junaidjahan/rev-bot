@@ -62,7 +62,7 @@ function Login() {
             }}
             className="w-30 mt-7 bg-blue-700 hover:bg-blue-800"
           >
-            Login
+            Login button
           </button>
         </div>
       </div>
