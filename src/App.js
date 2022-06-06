@@ -58,13 +58,13 @@ function App() {
               <Route path="login" element={<Login />} />
               <Route path="signup" element={<SignUp />} />
             </Route>
-            <Route path="home" element={<Home />} />
-            <Route path="reviews" element={<Reviews />}></Route>
-            <Route path="reviews/:id" element={<ProductReview />} />
-            <Route path="about" element={<About />}></Route>
-            <Route path="contactus" element={<Contactus />}></Route>
-            <Route path="about" element={<About />}></Route>
-            <Route path="contactus" element={<Contactus />}></Route>
+            <Route path="/home" element={<Home />} />
+            <Route path="/reviews" element={<Reviews />}></Route>
+            <Route path="/reviews/:id" element={<ProductReview />} />
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/contactus" element={<Contactus />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/contactus" element={<Contactus />}></Route>
           </Routes>
         </div>
 
